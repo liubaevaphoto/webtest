@@ -10,7 +10,7 @@ body {
   font-family: Arial, sans-serif;
 
   /* Background image */
-  background: url("images/524307233_18281855194260759_3478595892522825475_n (1).jpg") no-repeat center center fixed;
+  background: url("images/background.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white; /* so text is visible on dark images */
 }
