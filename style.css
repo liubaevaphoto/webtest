@@ -12,6 +12,14 @@ body {
   color: #3;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff; /* makes text visible on dark images */
+}
+
 }
 
 /* Navbar */
