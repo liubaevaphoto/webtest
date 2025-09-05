@@ -1,6 +1,128 @@
-git clone https://github.com/username/repository-name.git
-cd repository-name
-# Add your website files here
-git add .
-git commit -m "Initial website"
-git push origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalistic Website</title>
+  <style>
+    /* Reset default margins */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #89f7fe, #66a6ff);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 20px;
+      animation: slideDown 2s ease;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      animation: fadeIn 3s ease;
+    }
+
+    /* Moving background circles */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      animation: float 8s infinite ease-in-out;
+    }
+
+    .circle.small {
+      width: 80px;
+      height: 80px;
+      bottom: 10%;
+      left: 15%;
+      animation-duration: 10s;
+    }
+
+    .circle.medium {
+      width: 150px;
+      height: 150px;
+      top: 20%;
+      right: 20%;
+    }
+
+    .circle.large {
+      width: 250px;
+      height: 250px;
+      bottom: 25%;
+      right: 10%;
+      animation-duration: 12s;
+    }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      border: none;
+      background: #fff;
+      color: #333;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    button:hover {
+      background: #333;
+      color: #fff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="circle small"></div>
+  <div class="circle medium"></div>
+  <div class="circle large"></div>
+
+  <div class="container">
+    <h1>Hello, World ✨</h1>
+    <p>Welcome to my minimalistic, moving website.</p>
+    <button onclick="sayHello()">Click Me</button>
+  </div>
+
+  <script>
+    function sayHello() {
+      alert("Thanks for visiting my website! 🚀");
+    }
+  </script>
+</body>
+</html>
