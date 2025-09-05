@@ -8,8 +8,9 @@
 /* Full-page background image */
 body {
   font-family: Arial, sans-serif;
-  background: url("images/background.jpg") no-repeat center center;
+  background: url("images/background.jpg") no-repeat center top;
   background-size: cover;
+  background-attachment: scroll; /* moves with scrolling */
   color: white;
 }
 
