@@ -5,13 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-  color: #3;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
   body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
