@@ -1,130 +1,70 @@
-/* Reset & Base */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Full-page background image */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-
-  /* Background image */
   background: url("images/background.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: white; /* so text is visible on dark images */
+  color: white;
 }
 
-
 /* Navbar */
-nav {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(8px);
-  z-index: 1000;
-  transition: padding 0.3s ease, background 0.3s ease;
-}
-
-nav h1 {
-  color: #214;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  left: 0; bottom: -5px;
-  width: 0%; height: 2px;
-  background: #ffeb3b;
-  transition: width 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ffeb3b;
-}
-nav ul li a:hover::after {
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0; left: 0;
   width: 100%;
+  z-index: 1000;
 }
 
-/* Navbar shrink on scroll */
-nav.shrink {
-  padding: 0.5rem 3rem;
-  background: rgba(0,0,0,0.85);
-}
-
-/* Hero Section */
-header {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gra
-
-/* Logo container */
 .logo {
   display: flex;
   align-items: center;
-  gap: 15px; /* space between name & icons */
+  gap: 15px;
 }
 
-/* White name text */
 .logo .name {
-  color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
+  color: #fff; /* white text */
 }
 
 /* Social icons */
 .logo a {
   font-size: 1.4rem;
-  display: flex;
-  align-items: center;
+  text-decoration: none;
   transition: transform 0.3s ease;
 }
 .logo a:hover { transform: scale(1.2); }
 
 /* Instagram gradient */
 .logo .fa-instagram {
-  background: radial-gradient(circle at 30% 30%, 
+  background: radial-gradient(circle at 30% 30%,
     #fdf497 30%, #fd5949 50%, #d6249f 70%, #285AEB 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* TikTok original colors */
+/* TikTok duotone effect */
 .logo .fa-tiktok {
   position: relative;
-  color: #000; /* main TikTok glyph */
+  color: #000;
 }
 .logo .fa-tiktok::before {
   content: "\f97b";
   font-family: "Font Awesome 6 Brands";
   position: absolute;
   left: 3px; top: 3px;
-  color: #25F4EE; /* cyan */
+  color: #25F4EE;
   z-index: -1;
 }
 .logo .fa-tiktok::after {
@@ -132,6 +72,41 @@ header {
   font-family: "Font Awesome 6 Brands";
   position: absolute;
   left: -3px; top: -3px;
-  color: #FE2C55; /* red */
+  color: #FE2C55;
   z-index: -1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #ffeb3b;
+}
+
+/* Sections */
+header, section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+header {
+  height: 100vh; /* full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
 }
