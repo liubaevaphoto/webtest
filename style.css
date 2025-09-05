@@ -9,12 +9,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url("https://picsum.photos/1920/1080") no-repeat center top;
+  background: url("images/background.jpg") no-repeat center top;
   background-size: cover;
   background-attachment: scroll; /* ✅ photo scrolls with page */
   color: white;
 }
-
 
 /* Navbar */
 .navbar {
