@@ -80,3 +80,54 @@ header {
   align-items: center;
   text-align: center;
   background: linear-gra
+
+  /* Logo text */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff; /* makes 'Alina Liubaieva' white */
+}
+
+/* Links inside logo */
+.logo a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.logo a:hover { transform: scale(1.2); }
+
+/* Instagram gradient */
+.logo .fa-instagram {
+  background: radial-gradient(circle at 30% 30%, 
+    #fdf497 30%, #fd5949 50%, #d6249f 70%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TikTok original duotone */
+.logo .fa-tiktok {
+  position: relative;
+  color: #000; /* TikTok base */
+}
+.logo .fa-tiktok::before {
+  content: "\f97b";
+  font-family: "Font Awesome 6 Brands";
+  position: absolute;
+  left: 3px; top: 3px;
+  color: #25F4EE; /* cyan shadow */
+  z-index: -1;
+}
+.logo .fa-tiktok::after {
+  content: "\f97b";
+  font-family: "Font Awesome 6 Brands";
+  position: absolute;
+  left: -3px; top: -3px;
+  color: #FE2C55; /* red shadow */
+  z-index: -1;
+}
+
