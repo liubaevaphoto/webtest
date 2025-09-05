@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url("https://picsum.photos/1920/1080") no-repeat center top;
+  background: url("images/background.jpg") no-repeat center top;
   background-size: cover;
   position: relative;
 }
