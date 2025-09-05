@@ -13,53 +13,6 @@
   z-index: 1000;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #ffeb3b;
-}
-
-/* Push content down (so it doesn't hide under navbar) */
-body {
-  padding-top: 70px;
-}
-
-/* ===== SECTIONS ===== */
-section {
-  min-height: 100vh;
-  padding: 80px 20px;
-  text-align: center;
-  color: #fff;
-}
-
-section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-}
-
-section p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
 
 /* Logo + icons */
 .logo {
@@ -69,16 +22,46 @@ section p {
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .logo a {
-  color: #fff;
-  font-size: 1.2rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
+/* Instagram gradient */
+.logo a .fa-instagram {
+  background: radial-gradient(circle at 30% 30%, #fdf497 30%, #fd5949 50%, #d6249f 70%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TikTok multi-color effect */
+.logo a .fa-tiktok {
+  position: relative;
+  color: #000; /* base black */
+}
+.logo a .fa-tiktok::before {
+  content: "\f97b"; /* TikTok logo Unicode */
+  font-family: "Font Awesome 6 Brands";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  color: #25F4EE; /* cyan shadow */
+  z-index: -1;
+}
+.logo a .fa-tiktok::after {
+  content: "\f97b";
+  font-family: "Font Awesome 6 Brands";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  color: #FE2C55; /* red shadow */
+  z-index: -1;
+}
+
+/* Hover effect: make them pop */
 .logo a:hover {
-  color: #ffeb3b;
   transform: scale(1.2);
 }
