@@ -44,22 +44,25 @@ section {
   z-index: 1000;
 }
 
+/* Logo container */
 .logo {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
+/* White text for name */
 .logo .name {
-  font-size: 1.3rem;
+  color: #fff;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: #fff; /* white text */
 }
 
 /* Social icons */
 .logo a {
-  font-size: 1.4rem;
-  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
   transition: transform 0.3s ease;
 }
 .logo a:hover { transform: scale(1.2); }
@@ -72,17 +75,17 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-/* TikTok duotone effect */
+/* TikTok duotone (red + cyan + black) */
 .logo .fa-tiktok {
   position: relative;
-  color: #000;
+  color: #000; /* main TikTok glyph */
 }
 .logo .fa-tiktok::before {
   content: "\f97b";
   font-family: "Font Awesome 6 Brands";
   position: absolute;
   left: 3px; top: 3px;
-  color: #25F4EE;
+  color: #25F4EE; /* cyan */
   z-index: -1;
 }
 .logo .fa-tiktok::after {
@@ -90,8 +93,10 @@ section {
   font-family: "Font Awesome 6 Brands";
   position: absolute;
   left: -3px; top: -3px;
-  color: #FE2C55;
+  color: #FE2C55; /* red */
   z-index: -1;
+}
+
 }
 
 .nav-links {
