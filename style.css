@@ -5,14 +5,30 @@
   box-sizing: border-box;
 }
 
-/* Full-page background image */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: url("images/background.jpg") no-repeat center top;
-  background-size: cover;
-  background-attachment: scroll; /* ✅ photo scrolls with page */
   color: white;
+  background: #111;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("https://picsum.photos/1920/1080") no-repeat center top;
+  background-size: cover;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  padding: 50px;
+  background: #222;
+}
+
 }
 
 /* Navbar */
