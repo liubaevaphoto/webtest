@@ -6,12 +6,15 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  /* Background image */
   background: url("images/524307233_18281855194260759_3478595892522825475_n (1).jpg") no-repeat center center fixed;
   background-size: cover;
-  color: #fff; /* makes text visible on dark images */
+  color: white; /* so text is visible on dark images */
 }
+
 
 /* Navbar */
 nav {
