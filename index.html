@@ -3,65 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alina Liubaieva | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">Alina Liubaieva</div>
-    <ul class="nav-links">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Floating Circles -->
-  <div class="circle small"></div>
-  <div class="circle medium"></div>
-  <div class="circle large"></div>
-
-  <!-- Hero Section -->
-  <div class="container">
-    <h1 id="title">Hello, World ✨</h1>
-    <p id="subtitle">Welcome to my minimalistic, moving website.</p>
-    <button id="magicBtn">Click Me</button>
-  </div>
-
-  <!-- Sections -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Alina Liubaieva, and this is my creative space on the web.</p>
-  </section>
-
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Here are some of my projects and works (coming soon!).</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:alinatest@example.com">alinatest@example.com</a></p>
-  </section>
-
-  <!-- External JavaScript -->
-  <script src="script.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alina Liubaieva | Portfolio</title>
+  <title>Alina Liubaieva | Creative Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">
       Alina Liubaieva
@@ -75,35 +23,46 @@
     </ul>
   </nav>
 
-  <!-- Floating Circles -->
-  <div class="circle small"></div>
-  <div class="circle medium"></div>
-  <div class="circle large"></div>
-
   <!-- Hero Section -->
-  <div class="container">
-    <h1 id="title">Hello, World ✨</h1>
-    <p id="subtitle">Welcome to my minimalistic, moving website.</p>
-    <button id="magicBtn">Click Me</button>
-  </div>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hello, I’m <span>Alina</span></h1>
+      <p>Minimalist, creative, and always exploring new ideas.</p>
+      <a href="#portfolio" class="btn">See My Work</a>
+    </div>
+  </header>
 
-  <!-- Sections -->
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm Alina Liubaieva, and this is my creative space on the web.</p>
+    <p>
+      I’m Alina Liubaieva, a passionate creator who loves blending minimalism 
+      with motion. This space is my digital portfolio, where I share my work 
+      and creative journey.
+    </p>
   </section>
 
+  <!-- Portfolio Section -->
   <section id="portfolio">
     <h2>Portfolio</h2>
-    <p>Here are some of my projects and works (coming soon!).</p>
+    <div class="portfolio-grid">
+      <div class="card">Project 1</div>
+      <div class="card">Project 2</div>
+      <div class="card">Project 3</div>
+    </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:alinatest@example.com">alinatest@example.com</a></p>
   </section>
 
-  <!-- External JavaScript -->
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Alina Liubaieva</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
